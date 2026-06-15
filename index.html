@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner Pro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🌎 Travel Planner Pro</h1>
+    <button id="themeBtn">Modo Oscuro</button>
+</header>
+
+<section id="registerSection">
+    <h2>Registro</h2>
+
+    <form id="registerForm">
+
+        <input type="text"
+        id="name"
+        placeholder="Nombre completo"
+        required>
+
+        <input type="email"
+        id="email"
+        placeholder="Correo"
+        required>
+
+        <input type="text"
+        id="countryResidence"
+        placeholder="País de residencia"
+        required>
+
+        <button type="submit">
+            Guardar
+        </button>
+
+    </form>
+</section>
+
+<section>
+
+    <h2 id="welcome"></h2>
+
+</section>
+
+<section>
+
+    <h2>Dashboard</h2>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Consultas</h3>
+            <p id="totalSearches">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Favoritos</h3>
+            <p id="totalFavorites">0</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Buscar País</h2>
+
+    <input
+    type="text"
+    id="countryInput"
+    placeholder="Ejemplo: Colombia">
+
+    <button id="searchBtn">
+        Buscar
+    </button>
+
+</section>
+
+<section>
+
+    <h2>Información</h2>
+
+    <div id="countryInfo"></div>
+
+</section>
+
+<section>
+
+    <h2>Favoritos</h2>
+
+    <div id="favorites"></div>
+
+</section>
+
+<section>
+
+    <h2>Historial</h2>
+
+    <div id="history"></div>
+
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
